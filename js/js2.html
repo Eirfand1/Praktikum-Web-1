@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <button id="tombol">Klik Saya</button>
+
+    <script>
+        // Mendefinisikan fungsi yang akan dipanggil saat tombol diklik
+        function handleClick(event) {
+            alert('Tombol telah diklik!');
+            // Menampilkan teks yang diteruskan melalui parameter event
+            alert('Parameter event: ' + event);
+        }
+
+        // Menambahkan event listener ke tombol dengan menggunakan fungsi handleClick sebagai parameter
+        document.getElementById('tombol').addEventListener('click', handleClick);
+    </script>
+</body>
+</html>
