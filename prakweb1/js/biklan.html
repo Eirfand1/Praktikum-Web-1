@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      table{
+         border-collapse: collapse;
+      }
+      table tr:nth-child(even){
+         background-color: lightgray;
+      }
+      table tr:hover{
+         background-color: gray;
+      }
+      .container{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h1>JavaScript Arithmetic</h1>
+      <table cellpadding="10" border="1">
+         <tr style="background-color: lightgray;">
+            <th>Variabel</th>
+            <th>Nilai</th>
+            <th rowspan="5"><img src="https://www.techfor.id/wp-content/uploads/2019/12/html.png" alt="" width="200" height="200" id="gambar"></th>
+         </tr>
+         <tr>
+            <td>a</td>
+            <td id="satu">5</td>
+         </tr>
+         <tr>
+            <td>b</td>
+            <td id="dua">2</td>
+         </tr>
+         <tr>
+            <td>c</td>
+            <td id="tiga">1</td>
+         </tr>
+         <tr>
+            <td>Hasil</td>
+            <td id="hasil"></td>
+         </tr>
+      </table>
+      <button id="tombol">Ubah nilai</button>
+   </div>
+   <script>
+     
+     //event listener untuk hasil jika di hover dan mouseout
+      let hasil = document.getElementById('hasil');
+      hasil.addEventListener('mouseover', tampil);
+      hasil.addEventListener('mouseout', hilang);
+
+      //add event listeneer untuk button id tombol
+      let tombol = document.getElementById('tombol');
+      tombol.addEventListener('click', ubahNilai);
+
+      //fungsi hitung semua kolom nilai
+      function hitung(a, b, c) {
+         return a + b + c;
+      };
+
+      //fungsi menampilkan hasil yang telah diproses
+      function tampil() {
+         let a = parseInt(document.getElementById('satu').innerHTML);
+         let b = parseInt(document.getElementById('dua').innerHTML);
+         let c = parseInt(document.getElementById('tiga').innerHTML);
+         document.getElementById('hasil').innerHTML = hitung(a, b, c);
+      }
+     
+      //fungsi untuk menghilangkan tulisan
+      function hilang() {
+         document.getElementById('hasil').innerHTML = "";
+      }
+     
+      //fungsi untuk mengubah nilai
+      function ubahNilai(){
+         let perintah1 = prompt("Masukan nilai A");
+         let perintah2 = prompt("Masukan nilai B");
+         let perintah3 = prompt("Masukan nilai C");
+         document.getElementById('satu').innerHTML = perintah1;
+         document.getElementById('dua').innerHTML = perintah2;
+         document.getElementById('tiga').innerHTML = perintah3;
+
+         document.getElementById('gambar').src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png";
+      }
+
+   </script> 
+</body>
+</html>

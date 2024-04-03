@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         padding: 0;
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+      }
+      aside{
+         position: fixed;
+         display: block;
+         background-color: rgb(0, 0, 0);
+         color: white;
+         height: 100%;
+         z-index: 2; 
+      }
+      main{
+         z-index: -1;
+      }
+      aside ul li {
+         list-style-type: none;
+      }
+      a {
+         color: white;
+         text-decoration: none;
+      }
+      aside ul li{
+         margin-bottom: 1rem;
+      }
+      .sideClose {
+         position: absolute;
+         left: 75%;
+         top: 2%;
+      }
+      ul {
+         padding-left: 1rem;
+      }
+      .item {
+         background-color: white;
+         height: 3px;
+         width: 2rem;
+         display: block;
+         color: black;
+      }
+      .humberger{
+         display: flex;
+         z-index: -2;
+         gap: 6px;
+         flex-direction: column;
+         background-color: transparent;
+         border: none;
+      }
+     nav {
+      background-color: black;
+      color: white;
+      padding: 0.5rem;
+     } 
+   </style>
+</head>
+<body>
+   <aside>
+      <button class="sideClose" id="sideClose">X</button>
+      <ul>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li>
+            <button style="width: 100%;background-color: transparent;color: white;border: none;font-size: 20px;padding: 0;margin: 0;">Link dropdown</button> 
+            <ul>
+               <li><a href="#">dropdown 1</a></li>
+               <li><a href="#">dropdown 2</a></li>
+               <li><a href="#">dropdown 3</a></li>
+            </ul>
+         </li>
+         <li><a href="#">Link 4</a></li>
+         <li><a href="#">Link 5</a></li>
+      </ul>
+   </aside>
+   <main>
+      <nav>
+         <button class="humberger" id="humberger">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+         </button> 
+      </nav>
+      
+   </main>
+   <script>
+     function closeSidebar(){
+         document.getElementsByTagName('aside')[0].style.display = "none";
+      }
+     function openSidebar(){
+         document.getElementsByTagName('aside')[0].style.display = "block";
+     } 
+
+     let sideCloseButton = document.getElementById('sideClose');
+     let sideOpenButton = document.getElementById('humberger');
+     sideCloseButton.addEventListener('click', closeSidebar);
+     sideOpenButton.addEventListener('click', openSidebar); 
+   </script>
+</body>
+</html>
