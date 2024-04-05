@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Example</title>
+</head>
+<body>
+    <h1>Contoh Penggunaan BOM</h1>
+    
+    <script>
+        // Mendapatkan informasi browser dan layar
+        var browserInfo = "Anda menggunakan " + navigator.appName + " versi " + navigator.appVersion;
+        var screenWidth = "Lebar layar Anda adalah " + screen.width + " piksel";
+        
+        // Mengonfirmasi navigasi sebelum meninggalkan halaman
+        window.onbeforeunload = function() {
+            return "Anda yakin ingin meninggalkan halaman ini?";
+        };
+        
+        // Mengarahkan pengguna ke halaman lain
+        function redirect() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+    
+    <button onclick="redirect()">Pergi ke Google</button>
+</body>
+</html>
