@@ -33,12 +33,12 @@ Contoh Struktur Dokumen HTML:
 Elemen HTML Umum
 Beberapa elemen umum yang sering digunakan dalam HTML meliputi:
 
-`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Elemen untuk heading (judul) dengan tingkat kepentingan yang berbeda.
-`<p>`: Elemen untuk paragraf teks.
-`<a>`: Elemen untuk membuat tautan (link) ke halaman lain.
-`<img>`: Elemen untuk menampilkan gambar.
-`<ul>`, `<ol>`, `<li>`: Elemen untuk membuat daftar tak berurutan (unordered list) dan berurutan (ordered list).
-`<div>`, `<span>`: Elemen untuk mengelompokkan dan menambahkan gaya pada konten.
+- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Elemen untuk heading (judul) dengan tingkat kepentingan yang berbeda.
+- `<p>`: Elemen untuk paragraf teks.
+- `<a>`: Elemen untuk membuat tautan (link) ke halaman lain.
+- `<img>`: Elemen untuk menampilkan gambar.
+- `<ul>`, `<ol>`, `<li>`: Elemen untuk membuat daftar tak berurutan (unordered list) dan berurutan (ordered list).
+- `<div>`, `<span>`: Elemen untuk mengelompokkan dan menambahkan gaya pada konten.
 
 Berikut adalah contoh penulisan tag html, membuat ordered list:
 ```html
