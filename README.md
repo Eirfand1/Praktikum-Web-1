@@ -1,4 +1,4 @@
-# Praktikum-Web-1
+
 # Praktikum Web 1
 # Tugas 2
 Repositori ini berisi tugas 2 dari mata kuliah pemrograman web tentang:
