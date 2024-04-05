@@ -57,6 +57,31 @@ Bisa dilihat, dalam penulisan HTML text dibungkus sebuah tag container, aturan p
 
 ## CSS
 CSS(Cascading style sheet) adalah bahasa yang digunakan untuk menstyling/desain halaman website atau HTML yang telah kita buat. CSS mengontrol visualisasi elemen-elemen dengan mendefinisikan warna, tata letak(layout), dan lainya.
+
+Css dapat diaplikasikan ke elemen-elemen html dengan berbagia cara
+1. Inline CSS: Menambahkan style langsung pada tag html
+   ```html
+    <h1 style="color: blue; font-size: 24px;">Judul Halaman</h1>
+   ```
+2. Internal CSS: Menyertakan gaya CSS di dalam tag `<style>` di dalam tag `<head>` pada dokumen HTML.
+   ```html
+    <head>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+    </head>
+   ```
+3. external css: Menyertakan file CSS eksternal menggunakan tag <link> di dalam tag <head> pada dokumen HTML.
+   ```html
+   <head>
+        <link rel="stylesheet" href="styles.css">
+   </head>
+   ```
+   
+
 untuk contoh penulisanya sebagai berikut:
 ```sh
 <!DOCTYPE html>
