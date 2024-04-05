@@ -81,6 +81,26 @@ Css dapat diaplikasikan ke elemen-elemen html dengan berbagia cara
    </head>
    ```
    
+Selector CSS umum:
+1. Tag Selector: Memilih semua elemen dengan tag tertentu
+   ```html
+    h1 {
+    color: blue;
+    }
+   ```
+2. Class Selector: Memilih elemen dengan atribut class tertentu.
+   ```html
+   .judul {
+    font-size: 24px;
+    }
+   ```
+3. ID Selector
+   ```html
+    #header {
+    background-color: #333;
+    color: #fff;
+    }
+   ```
 
 untuk contoh penulisanya sebagai berikut:
 ```sh
