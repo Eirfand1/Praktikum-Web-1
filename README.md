@@ -11,8 +11,27 @@ Repositori ini berisi tugas 2 dari mata kuliah pemrograman web tentang:
 
 ## HTML
 HTML(Hyper Text Markup Languages) Merupakan sebuah bahasa markup yang berfungsi sebagai kerangka website. HTML mendefinisikan struktur konten web dengan menggunakan element-elemen yang disebut tag.
+
+Dokumen HTML dimulai dengan deklarasi DOCTYPE yang menentukan versi HTML yang digunakan, diikuti dengan elemen <html> sebagai akar dari dokumen. Di dalam <html>, terdapat elemen <head> untuk menyertakan informasi metadata seperti judul halaman dan elemen <body> untuk menampilkan konten yang terlihat oleh pengguna.
+
+Contoh Struktur Dokumen HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Halaman Web Anda</title>
+</head>
+<body>
+    <h1>Selamat Datang di Halaman Web Saya</h1>
+    <p>Ini adalah contoh paragraf.</p>
+</body>
+</html>
+```
 Berikut adalah contoh penulisan tag html, membuat ordered list:
-```sh
+```html
 <h4>Shopping List</h4>
 <ol>
   <li>Deterjen</li>
